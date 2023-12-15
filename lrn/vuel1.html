@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My first Vue page</title>
+  <style>
+    #app {
+      display: inline-block;
+      padding: 10px;
+      font-size: x-large;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+	<div>
+		<textarea v-on:input="itekst_change" v-model="itekst"></textarea>
+	</div>
+	<div>
+		<select id="comboA" onchange="getComboA(this)">
+			<option value="">select ztr</option>
+			<option value="unicode_to_inglish">unicode_to_inglish</option>
+			<option value="i_to_u8hin">i_to_u8hin</option>
+			<option value="u8hin_to_i">u8hin_to_i</option>
+			<option value="u_to_u8hin">u_to_u8hin</option>
+		</select>
+	</div>
+	<button @click="capitalize">Capitalize</button>
+	<p> {{ otekst }} </p>
+</div>
+
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<script src="vuel1.js"></script>
+<script src="i_to_u8hin.js"></script>
+
+</body>
+</html>
